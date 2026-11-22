@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praise Restaurant | Taste the Difference</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #111;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #292929;
+}
+
+.logo {
+  color: #d9ad60;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d9ad60;
+}
+
+.hero {
+  min-height: 570px;
+  padding: 110px 8%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #090909 20%, #111111dd),
+  url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400") center/cover;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tag {
+  color: #d9ad60;
+  letter-spacing: 5px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 8vw, 75px);
+  line-height: 1.05;
+  margin-bottom: 22px;
+}
+
+.gold {
+  color: #d9ad60;
+}
+
+.hero p {
+  color: #bbb;
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #d9ad60;
+  color: #111;
+  padding: 16px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 85px 7%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.heading h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.heading p {
+  color: #999;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.food {
+  background: #171717;
+  border: 1px solid #292929;
+  border-radius: 9px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.food:hover {
+  transform: translateY(-7px);
+  border-color: #d9ad60;
+}
+
+.food img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.food-info {
+  padding: 22px;
+}
+
+.food h3 {
+  margin-bottom: 12px;
+}
+
+.food p {
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.price {
+  color: #d9ad60;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.about {
+  background: #141414;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.about p {
+  color: #aaa;
+  line-height: 1.9;
+  margin-top: 20px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  color: #aaa;
+  margin: 15px 0 25px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 30px 15px;
+  color: #888;
+  border-top: 1px solid #292929;
+}
+
+footer span {
+  color: #d9ad60;
+}
+
+@media(max-width:600px) {
+  header {
+    padding: 18px 5%;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+  nav a {
+    margin-left: 9px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 90px 7%;
+  }
+
+  section {
+    padding: 65px 6%;
+  }
+
+  .heading h2 {
+    font-size: 30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PRAISE <span class="gold">RESTAURANT.</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="hero-content">
+    <div class="tag">PREMIUM DINING EXPERIENCE</div>
+    <h1>TASTE THE <span class="gold">DIFFERENCE.</span></h1>
+    <p>
+      Experience delicious meals, amazing flavours
+      and unforgettable moments. Welcome to
+      Praise Restaurant.
+    </p>
+    <a href="#menu" class="btn">EXPLORE OUR MENU</a>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="heading">
+    <h2>OUR <span class="gold">MENU</span></h2>
+    <p>Fresh ingredients. Delicious Nigerian flavours.</p>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="food">
+      <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600" alt="Jollof rice">
+      <div class="food-info">
+        <h3>Jollof Rice</h3>
+        <p>Classic Nigerian party jollof rice.</p>
+        <div class="price">₦3,500</div>
+      </div>
+    </div>
+
+    <div class="food">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Rice meal">
+      <div class="food-info">
+        <h3>Fried Rice</h3>
+        <p>Delicious fried rice with vegetables.</p>
+        <div class="price">₦4,000</div>
+      </div>
+    </div>
+
+    <div class="food">
+      <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600" alt="Soup">
+      <div class="food-info">
+        <h3>Egusi Soup</h3>
+        <p>Traditional Nigerian soup with assorted meat.</p>
+        <div class="price">₦5,000</div>
+      </div>
+    </div>
+
+    <div class="food">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Pizza">
+      <div class="food-info">
+        <h3>Special Pizza</h3>
+        <p>Freshly prepared cheesy pizza.</p>
+        <div class="price">₦8,000</div>
+      </div>
+    </div>
+
+  </div>
+  <p style="text-align:center;color:#777;margin-top:25px;font-size:12px">
+    Demo menu and sample prices. Replace with the restaurant's actual offerings.
+  </p>
+</section>
+
+<section class="about" id="about">
+  <div class="about-content">
+    <div class="heading">
+      <h2>ABOUT <span class="gold">US</span></h2>
+    </div>
+    <p>
+      At Praise Restaurant, we believe great food
+      brings people together. Our mission is to
+      serve delicious meals with quality ingredients
+      and excellent customer service.
+    </p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="heading">
+    <h2>ORDER <span class="gold">TODAY</span></h2>
+    <p>Craving something delicious? Contact us!</p>
+  </div>
+
+  <a class="btn"
+     href="https://wa.me/2348000000000?text=Hello%20Praise%20Restaurant%2C%20I%20want%20to%20place%20an%20order.">
+     ORDER ON WHATSAPP
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 <span>Praise Restaurant.</span> All rights reserved.</p>
+  <p style="margin-top:10px">Built by Praise Codes Tech.</p>
+</footer>
+
+</body>
+</html>
